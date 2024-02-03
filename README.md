@@ -1,5 +1,5 @@
 This repository highly depends on the <a href="https://github.com/Junjue-Wang/LoveDA">LoveDA</a> and  <a href="https://github.com/lslrh/CPSL">CPSL</a>. We thank the authors for their great work and clean code. Appreciate it!
-
+LoveDA and ISPRS datasets can be downloaded via links  <a href="https://zenodo.org/records/5706578">LoveDA</a> and  <a href="https://github.com/te-shi/MUCSS">LoveDA</a>, respectively
 
 ## Getting Started
 
@@ -30,12 +30,12 @@ for example transfer setting Rural to Urban, default='ast.2rural'
 ``` 
 python train.py
 ```
-Eval CBST Model on Urban val set
+Eval Model on Rural val set
 ```
 python eval.py
 ```
 Test
 ```
-python eval.py
+python test.py
 ```
 Submit your test results on [LoveDA Unsupervised Domain Adaptation Challenge](https://codalab.lisn.upsaclay.fr/competitions/424) and you will get your Test score.
