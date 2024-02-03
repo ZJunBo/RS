@@ -15,25 +15,27 @@ ln -s </path/to/LoveDA> ./LoveDA
 
 
 ### Prepare the necessary files for self-training
-#### 1. Python generate_class_distribution.py
-#### 2. Python calc_prototype.py
-```bash
-mkdir -vp ./log/
-mv ./CBST_2Urban.pth ./log/CBST_2Urban.pth
+#### 1. Compute class distrubution
+```
+Python generate_class_distribution.py
+```
+#### 2. Compute prototype for self-training initialization
+```
+Python calc_prototype.py
 ```
 
-#### 3. Evaluate on Urban test set
-```bash 
-bash ./scripts/predict_cbst.sh
-```
-Submit your test results on [LoveDA Unsupervised Domain Adaptation Challenge](https://codalab.lisn.upsaclay.fr/competitions/424) and you will get your Test score.
 
-### Train CBST Model
-From Rural to Urban
-```bash 
-bash ./scripts/train_cbst.sh
+### Train AST Model
+for example transfer setting Rural to Urban, default='ast.2rural'
+``` 
+python train.py
 ```
 Eval CBST Model on Urban val set
-```bash
-bash ./scripts/eval_cbst.sh
 ```
+python eval.py
+```
+Test
+```
+python eval.py
+```
+Submit your test results on [LoveDA Unsupervised Domain Adaptation Challenge](https://codalab.lisn.upsaclay.fr/competitions/424) and you will get your Test score.
