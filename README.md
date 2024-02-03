@@ -14,9 +14,9 @@ ln -s </path/to/LoveDA> ./LoveDA
 ```
 
 
-### Evaluate CBST Model on the predict set
-#### 1. Download the pre-trained [<b>weights</b>](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing)
-#### 2. Move weight file to log directory
+### Prepare the necessary files for self-training
+#### 1. Python generate_class_distribution.py
+#### 2. Python calc_prototype.py
 ```bash
 mkdir -vp ./log/
 mv ./CBST_2Urban.pth ./log/CBST_2Urban.pth
