@@ -37,6 +37,6 @@ python eval.py
 ```
 Test
 ```
-python test.py
+python predict.py
 ```
 Submit your test results on [LoveDA Unsupervised Domain Adaptation Challenge](https://codalab.lisn.upsaclay.fr/competitions/424) and you will get your Test score.
